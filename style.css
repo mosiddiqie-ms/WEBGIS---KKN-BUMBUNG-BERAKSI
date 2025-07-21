@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url("aset/MakassarBg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a4331;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    font-size: 20px;
+    color: white;
+  }
+  
+  nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  .btn-explore {
+    padding: 8px 14px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.team-section {
+  padding: 60px 20px;
+  background-color: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-container {
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: whitesmoke;
+}
+
+.team-frame-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.team-frame {
+  width: 100%;     /* sebelumnya mungkin 100% dari kontainer kecil */
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.4s ease;
+  border-radius: 20px;
+}
+
+.team-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.team-frame-wrapper:hover .team-frame {
+  transform: scale(1.15);
+}
+
+.team-frame-wrapper:hover .team-overlay {
+  opacity: 1;
+}
+
+footer {
+    position: relative;
+    background-color: #1a4331; 
+    color: #b7b5b5;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+      sans-serif;
+  }
+
+  /* ---- */
+  footer .sumber {
+    width: 35%;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(160, 157, 157, 0.5);
+  }
+  footer .bagian1 {
+    width: 50%;
+  }
+  footer .sumber h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  footer .menu {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 0px;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: left;
+  }
+  footer .sumber .bagian2 {
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+  }
+  footer .sumber .bagian2 .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    font-size: 13px;
+    border-right: solid #fff;
+  }
+  footer .sumber .bagian2 .footer-menu li {
+    font-size: 14px;
+  }
+  footer .sumber .bagian2 .footer-menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer .sumber .bagian2 .footer-menu li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* --- */
+  footer .Author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    padding-top: 20px;
+  }
+  .Author .photo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .Author .photo img {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    object-position: top;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .Author .me {
+    width: 30%;
+    padding: 20px;
+  }
+  .Author .me h4,
+  .Author .me p {
+    color: #fff;
+  }
+  .Author .me p {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .Author .me .p2 {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 10px;
+    color: #aaa;
+  }
+  .Author .text {
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  footer .Author .footer-social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  footer .Author .footer-social-icons .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  footer .Author .footer-social-icons .icon:hover {
+    color: #ffffff;
+  }
+  
+  footer .Author .bottom-footer p {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  footer .Author .bottom-footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .Author .bottom-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-social-icons .icon {
+    font-size: 28px;
+    color: white;  /* <== UBAH DARI #333 atau lainnya */
+    transition: color 0.3s, transform 0.3s;
+  }
+
+    .footer-social-icons .instagram:hover {
+    color: #E1306C; /* warna brand Instagram */
+  }
+
+  .footer-social-icons .whatsapp:hover {
+    color: #25D366; /* warna brand WhatsApp */
+  }
+
+  
+  .legend {
+    line-height: 18px;
+    color: #555;
+  }
+  .legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+  .legend img {
+    width: 14px; /* Ukuran ikon lebih kecil */
+    height: 14px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 1px;
+  }
+
+  .info.legend {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  line-height: 1.4;
+  max-width: 220px;
+}
+
+.info.legend h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.info.legend i {
+  width: 18px;
+  height: 12px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  background: #999;
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.map-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 0px auto;
+}
+
+.map-description h2 {
+  font-size: 30px;
+  margin-bottom: 0%;
+  color: white;
+}
+
+.map-description p {
+  font-size: 18px;
+  color: white;
+}
+
+/*Team frame */
+
+.team-frame {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.team-frame h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-auto-rows: auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-card {
+  background-color: white;
+  padding: 2.5px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.team-card:hover {
+  transform: scale(1.15);
+}
+
+.team-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Modal Styles */
+.image-modal {
+  display: none; 
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.image-modal-content {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #db6b23;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #db6b23;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

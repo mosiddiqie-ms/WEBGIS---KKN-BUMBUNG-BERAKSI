@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB GIS SEBARAN POTENSI WISATA DAN UMKM DI DESA SEMBALUN BUMBUNG</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1>WEB GIS SEBARAN POTENSI WISATA DAN UMKM DI DESA SEMBALUN BUMBUNG</h1>
+    <nav>
+      <a href="#peta1">Meet Our Team</a>
+      <a href="peta.html">Map</a>
+      <a href="#contact">Contact</a>
+      <button class="btn-explore"><a href="#explore">Explore</a></button>
+    </nav>
+  </header>
+
+  <section class="team-section" id="peta1">
+    <div class="team-container">
+      <h2 class="team-title">KKN-PMD UNIVERSITAS MATARAM TAHUN 2025 DESA SEMBALUN BUMBUNG</h2>
+      <div class="team-frame-wrapper">
+        <img src="aset/Meetourteam.png" alt="Meet Our Team" class="team-frame" />
+        <div class="team-overlay">
+          <p class="team-description">
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="map-section" id="peta1">
+  <div class="map-description">
+    <h2>WebGIS Sebaran Potensi Wisata dan UMKM</h2>
+    <p>
+      WebGIS ini menampilkan informasi spasial terkait potensi wisata dan UMKM di Desa Sembalun Bumbung, Kecamatan Sembalun, Kabupaten Lombok Timur. Data ini disusun oleh Tim KKN-PMD UNRAM 2025.
+    </p>
+  </div>
+
+<section class="team-section">
+  <div class="team-frame">
+    <h2>Meet Our Team - Bumbung Beraksi</h2>
+    <div class="team-grid">
+      <div class="team-card"><img src="image/Rio.jpg" alt="Ketua"></div>
+      <div class="team-card"><img src="image/Mayang.jpg" alt="Sekretaris"></div>
+      <div class="team-card"><img src="image/Candra.jpg" alt="Bendahara"></div>
+      <div class="team-card"><img src="image/Ici.jpg" alt="Acara"></div>
+      <div class="team-card"><img src="image/Wanda.jpg" alt="Humas"></div>
+      <div class="team-card"><img src="image/Ningsih.jpg" alt="Konsumsi"></div>
+      <div class="team-card"><img src="image/Nada.jpg" alt="Humas"></div>
+      <div class="team-card"><img src="image/Nadya.jpg" alt="Media"></div>
+      <div class="team-card"><img src="image/Aldi.jpg" alt="Logistik"></div>
+      <div class="team-card"><img src="image/Putri.jpg" alt="Media"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Modal for Zoomed Image -->
+  <div id="imageModal" class="image-modal">
+    <span class="image-modal-close" onclick="closeModal()">&times;</span>
+    <img class="image-modal-content" id="modalImg" />
+  </div>
+
+  <script src="image.js"></script>
+</body>
+</html>
+
+<!-- FRAME KHUSUS UNTUK FOOTER -->
+<section class="footer-frame">
+  <footer id="contact">
+    <div class="sumber">
+      <div class="bagian1">
+        <h2>Sumber & Referensi</h2>
+        <ul class="menu">
+          <li class="menu-list">Data Rupa Bumi Digital Indonesia - BIG</li>
+          <li class="menu-list">Data Persil Bangunan - Open Building</li>
+          <li class="menu-list">Data Open Street Map</li>
+          <li class="menu-list">Data Sebaran Wisata dan UMKM - Survey Lapangan</li>
+        </ul>
+      </div>
+      <div class="bagian2">
+        <ul class="footer-menu">
+          <li class="footer_menu_list"><a href="#peta1">Meet Our Team</a></li>
+          <li class="footer_menu_list"><a href="peta.html">Map</a></li>
+          <li class="footer_menu_list"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="Author">
+      <div class="photo">
+        <img src="aset/Author.png" alt="Foto Profil" />
+      </div>
+      <div class="me">
+        <h4>Disusun oleh :</h4>
+        <p>KKN-PMD UNIVERSITAS MATARAM TAHUN 2025 DESA SEMBALUN BUMBUNG.</p>
+        <p class="p2">Dosen Pembimbing : Dr.rer.nat. Teti Zubaidah, S.T., M.T.</p>
+      </div>
+      <div class="text">
+        <div class="footer-social-icons">
+          <a href="https://www.instagram.com/bumbungberaksi" target="_blank" class="icon instagram">
+            <div class="icon"><i class="uil uil-instagram"></i></div>
+          </a>
+          <a href="https://wa.me/6287860393336" target="_blank" class="icon whatsapp">
+            <div class="icon"><i class="uil uil-whatsapp"></i></div>
+          </a>
+        </div>
+        <div class="bottom-footer">
+          <p>Copyright &copy; 
+            <a href="#explore" style="text-decoration: none">Bumbung Beraksi</a> - All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
